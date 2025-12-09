@@ -1,1 +1,15 @@
+# Aqualens Dataset (Clean vs Polluted Water)
+
+The dataset used to train AlexNet is stored on Google Drive due to size limits.
+
+Download the full dataset here:  
+👉 https://drive.google.com/drive/folders/13vi2NjpdaDVixDxx2ZhrPOgTUVPn-9Y8?usp=sharing
+
+## Structure
+
+The folder contains:
+2 data sets
+polluted water data set
+Clean water data set
+
 
