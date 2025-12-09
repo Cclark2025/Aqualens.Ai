@@ -7,7 +7,11 @@ github_username: your-github-username
 
 # Navigation links (these match pages we’ll create next)
 header_pages:
+ header_pages:
   - index.md
+  -problem.md
   - approach.md
   - dataset.md
   - results.md
+  - deliverables.md
+
