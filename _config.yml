@@ -1,0 +1,13 @@
+title: Aqualens AI – AlexNet Water Classifier
+description: Classifying clean vs polluted water using AlexNet and custom image datasets.
+theme: minima
+
+# Optional: GitHub repo link for the header
+github_username: your-github-username
+
+# Navigation links (these match pages we’ll create next)
+header_pages:
+  - index.md
+  - approach.md
+  - dataset.md
+  - results.md
