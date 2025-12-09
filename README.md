@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AquaLens AI
-permalink: /
+
 ---
 
 # AquaLens AI: Crystal Clear Water Intelligence
