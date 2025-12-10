@@ -1,45 +1,95 @@
----
-1. Project Overview
+📘 Project Overview
 
-A brief introduction to the AquaLens AI project and what it aims to accomplish.
+AquaLens AI is a computer vision project designed to improve water pollution monitoring through automated image classification. Using deep learning, the system identifies whether a water sample appears clean or polluted, offering a faster and more scalable alternative to traditional laboratory-based testing. The project aims to support environmental researchers, local governments, and communities by providing real-time, accessible water quality assessments.
 
-2. Problem & Motivation
+🌍 Problem & Motivation
 
-Why water pollution detection matters and what inspired this project.
-Water pollution is often difficult to detect without specialized laboratory testing, leading to delays in identifying harmful contaminants. Traditional monitoring methods are time-consuming, expensive, and inaccessible in many communities. Aqualens AI aims to solve this problem by using deep learning to classify clean versus polluted water from images, providing a faster, automated, and scalable approach to water quality assessment.
+Water pollution is often difficult to detect without specialized laboratory testing, which leads to delays in identifying harmful contaminants. Traditional monitoring methods are:
 
+Slow — results may take days or weeks
 
-3. AlexNet Technical Approach
+Expensive — requiring specialized equipment and trained personnel
 
-A clear summary of how AlexNet is used, including preprocessing and training steps.
+Inaccessible — many rural or low-resource communities lack testing infrastructure
 
-AquaLens AI harnesses cutting-edge artificial intelligence and computer vision to revolutionize water pollution detection and monitoring. We provide real-time, actionable insights to protect our planet's most vital resource.
+AquaLens AI provides a solution by applying deep learning to analyze water images directly. By classifying images as clean or polluted, it offers a faster, automated, and highly scalable approach to water quality assessment.
 
-Aqualens AI uses a deep learning workflow to classify water images as clean or polluted. The primary model is AlexNet, a convolutional neural network trained on standardized water images that were resized and normalized for consistency. The dataset is structured into separate train and test folders, each containing labeled images of clean and polluted water. 
-Data set 433 images split into 
+🧠 AlexNet Technical Approach
 
+AquaLens AI uses a deep learning workflow centered around AlexNet, a convolutional neural network originally designed for large-scale image recognition. The project adapts AlexNet to classify water samples through:
 
+Model Workflow
 
+Dataset Structure:
+433 total images, split into training and testing sets with two labels — clean and polluted.
 
-5. Results
+Preprocessing:
+Images are resized, normalized, and organized into labeled folders.
+
+Training Pipeline:
+AlexNet is trained for multiple epochs using cross-entropy loss and standard optimization techniques.
+
+Augmentation Tests:
+Experiments included testing AlexNet with and without data augmentation to compare generalization.
+
+Vision
+
+AquaLens AI ultimately aims to provide real-time, actionable environmental insights using scalable AI and computer vision.
+
+📊 Results
 Model Performance Overview
-Three convolutional neural network (CNN) architectures—AlexNet, VGG16, and ResNet18—were evaluated to classify water images into Clean and Dirty categories.
- Each model was trained for 5 epochs using identical training and validation splits, and evaluated using validation accuracy as the primary performance metric.
-Effect of Data Augmentation (AlexNet)
-Result: Validation Accuracy decreased from ~89.6% (no augmentation) to ~72.9% (with augmentation)
-ResNet18 Architecture Performance (Best Model)
-Result: ResNet18 achieved ~89.6% accuracy consistently across epochs, outperforming AlexNet with augmentation and matching the AlexNet baseline.
- Overall Findings
-ResNet18 is the top-performing architecture, providing the best balance of accuracy and generalization.
-AlexNet suffers under augmentation, indicating the visual patterns defining “clean” vs “dirty” water are easily disrupted
-Model accuracy plateaued around 90%, which is strong performance given the small dataset size.
 
+Three convolutional neural network architectures were evaluated:
 
+AlexNet
 
+VGG16
 
-Model accuracy, evaluation metrics, and key findings from the experiments.
+ResNet18
 
-6. Takeaways & Future Work
-cross all experimental conditions, ResNet18 consistently demonstrated the strongest performance in classifying clean versus contaminated water samples, achieving validation accuracies approaching 90%, outperforming both AlexNet and VGG16 under identical training settings. While AlexNet performed reasonably well without augmentation, its accuracy dropped sharply when exposed to data perturbations, indicating sensitivity to visual distortions and limited generalization capacity on small datasets. In contrast, ResNet18’s residual learning architecture enabled it to extract more stable and discriminative features—particularly those related to turbidity, color gradients, and particulate patterns—resulting in superior robustness and accuracy.
+All models were trained for 5 epochs using identical training and validation splits. Validation accuracy served as the primary performance metric.
 
-Final reflections on what you learned and the next steps for improving the model.
+Data Augmentation Impact (AlexNet)
+
+Without augmentation: ~89.6% accuracy
+
+With augmentation: ~72.9% accuracy
+➡️ Conclusion: AlexNet struggles when images are distorted, indicating limited generalization ability.
+
+Best Architecture: ResNet18
+
+Achieved ~89.6% accuracy consistently across epochs
+
+Outperformed augmented AlexNet
+
+Matched or exceeded AlexNet’s baseline performance
+
+Overall Findings
+
+ResNet18 is the strongest model, offering the best balance of accuracy and robustness.
+
+AlexNet is sensitive to augmentation, suggesting it relies heavily on specific visual cues.
+
+Model accuracy plateaued around 90%, which is strong given the small dataset size.
+
+🚀 Takeaways & Future Work
+
+Across all experiments, ResNet18 consistently delivered the highest accuracy and strongest generalization. Its residual learning framework enables the extraction of more stable visual features—such as turbidity, color shifts, and particulate patterns—making it more resilient to noise and variation in water imagery.
+
+Key takeaways:
+
+AlexNet performs well on raw images but loses accuracy when augmented, revealing limited robustness.
+
+ResNet18 generalizes significantly better, making it the preferred architecture for future development.
+
+Dataset size is a limiting factor; expanding it will likely push accuracy beyond 90%.
+
+Future Improvements
+
+Expand the dataset across seasons, lighting conditions, and geographic regions
+
+Integrate advanced architectures like EfficientNet or Vision Transformers
+
+Develop a user-facing web dashboard for real-time predictions
+
+Implement multi-class classification (e.g., plastics, algae blooms, chemical discoloration)
