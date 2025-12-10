@@ -23,5 +23,4 @@ A slide deck summarizing the project, methodology, results, and key takeaways.
 ---
 
 ### **4. Presentation Video**
-A recorded project walkthrough explaining the problem, dataset, model, and results.  
-👉 **Watch Video:** [Video Link](#)
+https://drive.google.com/file/d/121AvtDLUZZ8Znabi9ZILRfppZiWo_CkH/view?usp=sharing
