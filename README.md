@@ -1,6 +1,6 @@
 📘 Project Overview
 
-AquaLens AI is a computer vision project designed to improve water pollution monitoring through automated image classification. Using deep learning, the system identifies whether a water sample appears clean or polluted, offering a faster and more scalable alternative to traditional laboratory-based testing. The project aims to support environmental researchers, local governments, and communities by providing real-time, accessible water quality assessments.
+AquaLens AI is a computer vision project designed to improve water pollution monitoring through automated image classification. Using deep learning, the system idedntifies whether a water sample appears clean or polluted, offering a faster and more scalable alternative to traditional laboratory-based testing. The project aims to support environmental researchers, local governments, and communities by providing real-time, accessible water quality assessments.
 
 🌍 Problem & Motivation
 
